@@ -10,13 +10,14 @@ import java.io.InputStream;
 public class Demo {
 
     public static void main(String[] args) throws Exception {
+        // git上传有隐私内容故删除
         // Endpoint以华东1（杭州）为例，其它Region请按实际情况填写。
-        String endpoint = "https://oss-cn-shanghai.aliyuncs.com";
+        String endpoint = "";
         // 阿里云账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM用户进行API访问或日常运维，请登录RAM控制台创建RAM用户。
-        String accessKeyId = "LTAI5t6XcXniKvy24Rq6ZPvM";
-        String accessKeySecret = "4fsJMhPZtDY0I0MouYGGDKJcfDTUZs";
+        String accessKeyId = "";
+        String accessKeySecret = "";
         // 填写Bucket名称，例如examplebucket。
-        String bucketName = "rayyyy-web-tlias";
+        String bucketName = "";
 
         // 填写Object完整路径，完整路径中不能包含Bucket名称，例如exampledir/exampleobject.txt。
         String objectName = "1.png";
