@@ -19,5 +19,3 @@ mybatis:
 
 # 阿里云OSS
 # git上传不让显示故此删除
-aliyun:
-  oss:
