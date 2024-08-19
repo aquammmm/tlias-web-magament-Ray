@@ -18,9 +18,6 @@ mybatis:
     map-underscore-to-camel-case: true
 
 # 阿里云OSS
+# git上传不让显示故此删除
 aliyun:
   oss:
-    endpoint: https://oss-cn-shanghai.aliyuncs.com
-    accessKeyId: LTAI5t6XcXniKvy24Rq6ZPvM
-    accessKeySecret: 4fsJMhPZtDY0I0MouYGGDKJcfDTUZs
-    bucketName: rayyyy-web-tlias
