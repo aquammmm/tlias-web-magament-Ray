@@ -2,6 +2,7 @@ package com.ray.service.impl;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import com.ray.annotation.Log;
 import com.ray.mapper.EmpMapper;
 import com.ray.pojo.Emp;
 import com.ray.pojo.PageBean;
@@ -22,6 +23,7 @@ public class EmpServiceImpl implements EmpService {
     private EmpMapper empMapper;
 
     @Override
+    @Log
     public PageBean page(Integer page, Integer pageSize, String name, Short gender, LocalDate begin, LocalDate end) {
 //        // 1. 获取总记录数
 //        Long count = empMapper.count();

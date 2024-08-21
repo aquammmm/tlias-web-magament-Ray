@@ -1,6 +1,7 @@
 package com.ray.controller;
 
 
+import com.ray.annotation.Log;
 import com.ray.pojo.Dept;
 import com.ray.pojo.Result;
 import com.ray.service.DeptService;
@@ -30,8 +31,9 @@ public class DeptController {
         return Result.success(deptList);
     }
 
+
     @DeleteMapping("/depts/{id}")
-    private Result delete(@PathVariable Integer id){
+    private Result delete(@PathVariable Integer id) throws Exception {
         log.info("成功删除第{}行",id);
 
         // 调用service删除数据
@@ -39,6 +41,7 @@ public class DeptController {
 
         return Result.success();    // 删除操作无需返回任何信息
     }
+
 
     @PostMapping("/depts")
     private Result add(@RequestBody Dept dept){
@@ -56,6 +59,7 @@ public class DeptController {
 
         return Result.success(dept);
     }
+
 
     @PutMapping("/depts")
     private Result Update(@RequestBody Dept dept){

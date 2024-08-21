@@ -19,3 +19,9 @@ mybatis:
 
 # 阿里云OSS
 # git上传不让显示故此删除
+
+
+#spring事务管理日志
+logging:
+ level:
+  org.springframework.jdbc.support.JdbcTransactionManager: debug

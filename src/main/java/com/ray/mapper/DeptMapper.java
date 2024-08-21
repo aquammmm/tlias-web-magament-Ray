@@ -1,5 +1,6 @@
 package com.ray.mapper;
 
+import com.ray.annotation.Log;
 import com.ray.pojo.Dept;
 import org.apache.ibatis.annotations.*;
 
